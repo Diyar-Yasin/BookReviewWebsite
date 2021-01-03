@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Cheat Sheet</title>
+	</head>
+	<body>
+		<!-- Headings -->
+		<h1>Heading One</h1>
+		<h2>Heading Two</h2>
+		<h3>Heading Three</h3>
+		<h4>Heading Four</h4>
+		<h5>Heading Five</h5>
+		<h6>Heading Six</h6>
+
+		<!-- Paragraph -->
+		<p>
+			<!-- strong makes the text stick out,
+				default its bold but it can be changed in CSS -->
+			<strong> poggers </strong>
+
+			<!-- em makes the text emphasized,
+				default its italics again can be changed in CSS -->
+			<em> super </em>
+
+			<!-- <a> is a link tag, adding the href="link" attribute
+				gives the link you want to hyperlink to open. This will redirect
+				your current page to link. Adding target="_blank" will create
+				a new tab so you don't leave the original webpage -->
+			<a href="http://google.com" target="_blank">
+			GO TO GOOGLE</a>
+
+			This is my first paragraph!
+		</p>
+		<p>
+			This is our second paragraph
+		</p>
+
+		<!-- Lists -->
+		<!-- unordered list: Adds bullet points + padding -->
+		<ul>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ul>
+
+		<!-- ordered list: Adds numbers + padding -->
+		<ol>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ol>
+
+		<!-- Table -->
+		<!-- only used for data storage, if you want layout design use CSS -->
+		<table>
+			<thead>
+				<!-- <tr> stands for table row -->
+				<tr>
+					<!-- table headings in the row -->
+					<th>Name</th>
+					<th>Email</th>
+					<th>Age</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<!-- Stands for table data -->
+					<td>Diyar Yasin</td>
+					<td>diyaryasin.dy@gmail.com</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<td>Bob Billy</td>
+					<td>billjoe@gmail.com</td>
+					<td>23</td>
+				</tr>
+				<tr>
+					<td>Kim Possible</td>
+					<td>kp@gmail.com</td>
+					<td>20</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<!-- line break to push the Forms section down a bit, this does not
+			ever have data in the tag so only <br> or </br> is needed, not both -->
+		<br>
+
+		<!-- horizontal rule, puts a horizontal line across the page -->
+		<hr>
+		<br>
+
+		<!-- Forms -->
+		<!-- We can build the look in HTML but another programming language is needed
+			to make it work. action="" is where the form is sent (to be processed).
+			method="" is how we send it. POST is secure while GET will cause the data
+			to be shown in the search url (good for searching, not for inputting data) -->
+		<form action="process.php" method="POST">
+			<div>
+				<label>First Name</label>
+				<!-- input is how we enter data, type is the type of input (there are many,
+					but text is common). name attribute gives us a name that the file from
+					action= can use to access the form. placeholder puts text in the input
+					box and then removes it once edited by a user. -->
+				<input type="text" name="firstName" placeholder="Enter first name">
+				</input>
+			</div>
+			<br>
+			<div>
+				<label>Last Name</label>
+				<input type="text" name="lastName"> </input>
+			</div>
+			<br>
+			<div>
+				<label>Email</label>
+				<!-- if input is not a valid email address we get an error without
+					having to add any extra code to check -->
+				<input type="email" name="email"> </input>
+			</div>
+			<br>
+			<div>
+				<label>Message</label>
+				<!-- textarea gives a large box to type multiple lines -->
+				<textarea name="message"></textarea>
+			</div>
+			<br>
+			<div>
+				<label>Gender</label>
+				<!-- select allows us to choose from a set of options -->
+				<select name="gender">
+					<!-- Each option needs a value to give to the file and the name of
+						the option is in between the opening/closing tags -->
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+			<br>
+			<div>
+				<label>Age:</label>
+				<!-- number type only takes numbers of course. value="" gives a
+					predetermined starting value -->
+				<input type="number" name="age" value="30"> </input>
+			</div>
+			<br>
+			<div>
+				<label>Birthday</label>
+				<!-- date type will give you a calandar you can choose dates from -->
+				<input type="date" name="birthday"> </input>
+			</div>
+			<br>
+			<!-- submit type is a button that will cause the form to be sent to the 
+				file we specified at the start of the form. note we do not need to close
+				this input tag -->
+			<input type="submit" name="submit" value="Submit"> 
+		</form>
+		<br>
+
+		<!-- Button -->
+		<!-- Can be put outside of forms. In order for it to do anything, we need
+			javascript where click="" refers to some function to do once clicked -->
+		<button click="someFunction">Click Me</button>
+		<br>
+
+		<!-- Image -->
+		<!-- Self closing, no need for </img>. src stands for the source (what Image
+			we display). Since my file is in a GitHub repo, I have to give the Image
+			the address to get the image out of. If you just put <img> it will look for it
+			in where the root html file is (which wont work since my file is in a repo).
+			Finally, note that we can use width and height attributes to say how many pixels
+			the image should be, although this is best done in CSS.-->
+		<!-- The <a> allows us to link the image file by clicking on the image -->
+		<a href="C:/Users/amirn/Documents/GitHub/BookReview_Website/Images/Penguin.jpg"
+		target="_blank">
+		<img src="C:/Users/amirn/Documents/GitHub/BookReview_Website/Images/Penguin.jpg"
+		alt="Failed to Locate Image" width="200" height="400">
+		</a>
+		<br>
+		<!-- This fail case is illustrated here. Also note the alt attribute is the text
+			that will be displayed if the image is not found -->
+		<img src="Images/Penguin.jpg" alt="Failed to Locate Image">
+
+		<!-- Quotations -->
+		<!-- cite just tells us where the quote is coming from. -->
+		<blockquote cite="http://traversymedia.com">
+			Yeehaw brother!
+		</blockquote>
+
+		<!-- abbr is an abbrevation tag which allows us to hover over something and
+			read its abbreviation (or whatever you put there) -->
+		<p>The <abbr title="World Wide Web">WWW</abbr> is awesome</p>
+
+		<!-- semantic to let the browser know this line is being cited -->
+		<p><cite>Dornell University (Circa. right now)</cite></p>
+
+		<div style="margin-top:500px"></div>
+	</body>
+</html>
