@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<!-- HTML 5 has Semantic Tags that are made for building a general structure to your 
+	webpage. header, footer, aside, main, article, nav, section, and details -->
+<head>
+	<title>MY BLOG</title>
+	<!-- When google scans the website it will look at this so it knows to pull up
+		this website if keywords are matching. Each key word is separated by a comma -->
+	<meta name="description" content="Awesome blog by Diyar Yasin">
+	<meta name="keywords" content"web design blog, web dev blog, diyar">
+
+	<!-- Normally you want CSS in a separate file, however, you can put it here sometimes
+		as well. Also the type attribute is not necessary. Currently this code is not
+		executing but this is CSS, not HTML -->
+	<style type="text/css">
+		#main-header{
+			text-align:center;
+			background-color:black;
+			color:white;
+			padding:10px;
+		}
+		#main-footer{
+			text-align:center;
+			font-size:18px;
+		}
+	</style>
+</head>
+<body>
+	<!-- If we have a lot of headers/footers we can add an id so we differentiate
+		b/w different headers/footers -->
+	<header id="Main Header">
+		<h1>My Website</h1>
+	</header>
+
+	<!-- Takes you to main page -->
+	<a href="index.html">Go to index</a>
+
+	<section>
+		<article class="post">
+			<h3>Blog Post #1</h3>
+			<!-- made for dates, creates small text -->
+			<small>Posted by Diyar on Jan. 3, 2021</small>
+			<p>Random things to talk about</p>
+			<a href="post.html">Read More</a>
+		</article>
+
+		<article class="post">
+			<h3>Blog Post #2</h3>
+			<!-- made for dates, creates small text -->
+			<small>Posted by Diyar on Jan. 3, 2021</small>
+			<p>Random things to talk about</p>
+			<a href="post.html">Read More</a>
+		</article>
+
+		<article class="post">
+			<h3>Blog Post #3</h3>
+			<!-- made for dates, creates small text -->
+			<small>Posted by Diyar on Jan. 3, 2021</small>
+			<p>Random things to talk about</p>
+			<a href="post.html">Read More</a>
+		</article>
+	</section>
+
+	<aside>
+		<h3>Categories</h3>
+		<nav>
+			<ul>
+				<!-- the # means that we get taken to the exact page we are already on.
+					Also, we would use CSS to make this aside on the side of the page,
+					right now it is just underneath everything above. -->
+				<li><a href="#">Catgeory 1</a></li>
+				<li><a href="#">Catgeory 2</a></li>
+				<li><a href="#">Catgeory 3</a></li>
+			</ul>
+		</nav>
+	</aside>
+
+	<footer id="Main Footer">
+		<!-- &copy produces the copyright symbol -->
+		<p>Copyright &copy; 2021, Drs website</p>
+	</footer>
+</body>
+</html>
