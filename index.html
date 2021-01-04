@@ -2,6 +2,12 @@
 <html>
 	<head>
 		<title>HTML Cheat Sheet</title>
+
+		<!-- link is equivalent to an import in java or using in unity. We use rel
+			to tell the us that we are importing a stylesheet with type css and give
+			the location through href. -->
+		<link rel="stylesheet" type="text/css"
+		href="StyleSheet.css">
 	</head>
 	<body>
 		<!-- Link to other website page -->
@@ -13,7 +19,41 @@
 		<h3>Heading Three</h3>
 		<h4>Heading Four</h4>
 		<h5>Heading Five</h5>
-		<h6>Heading Six</h6>
+
+		<div class="container">
+			<!-- class vs. id
+				While HTML does not actual have any differences between the two, they both
+				can be used to identify a specific header or tag, you should use id when
+				the item is unique, when it is the only one that is being named that id. If
+				you want to reuse css style settings or something, you would use class. -->
+			<div class="box-1">
+				<h6>Heading Six</h6>
+				<p>Est odio vulputate in esse dolor elit nonumy suscipit minim sea amet
+					ipsum sed volutpat eu dolor justo ipsum adipiscing
+				</p>
+			</div>
+
+			<div class="box-2">
+				<h4>Crying IRL!</h4>
+				<p>Est odio vulputate in esse dolor elit nonumy suscipit minim sea amet
+					ipsum sed volutpat eu dolor justo ipsum adipiscing. Est cum sit eum
+					et ut autem sit takimata eirmod dolor dolor accusam sit accusam amet 
+					duis lorem aliquyam minim
+				</p>
+				<a href="#" class="button">Read More</a>
+				<br>
+
+				<div class="categories">
+					<h2>Categories</h2>
+					<ul>
+						<li><a href="#">Category 1</a></li>
+						<li><a href="#">Category 2</a></li>
+						<li><a href="#">Category 3</a></li>
+						<li><a href="#">Category 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
 		<!-- Paragraph -->
 		<p>
@@ -32,7 +72,11 @@
 			<a href="http://google.com" target="_blank">
 			GO TO GOOGLE</a>
 
-			This is my first paragraph!
+			Gubergren ea vero sanctus adipiscing justo dolore sadipscing invidunt 
+			velit diam velit sit dolor diam voluptua takimata invidunt enim nisl nulla 
+			sed justo labore justo justo clita odio amet clita ea ea iriure zzril ipsum 
+			et facer ipsum dignissim invidunt consequat gubergren diam eos diam magna 
+			vulputate id aliquip consetetur	
 		</p>
 		<p>
 			This is our second paragraph
@@ -100,7 +144,7 @@
 			to make it work. action="" is where the form is sent (to be processed).
 			method="" is how we send it. POST is secure while GET will cause the data
 			to be shown in the search url (good for searching, not for inputting data) -->
-		<form action="process.php" method="POST">
+		<form action="process.php" method="POST" class="my-form">
 			<div>
 				<label>First Name</label>
 				<!-- input is how we enter data, type is the type of input (there are many,
@@ -157,7 +201,7 @@
 			<!-- submit type is a button that will cause the form to be sent to the 
 				file we specified at the start of the form. note we do not need to close
 				this input tag -->
-			<input type="submit" name="submit" value="Submit"> 
+			<input class="button" type="submit" name="submit" value="Submit"> 
 		</form>
 		<br>
 
@@ -198,6 +242,57 @@
 		<!-- semantic to let the browser know this line is being cited -->
 		<p><cite>Dornell University (Circa. right now)</cite></p>
 
+		<div class="block">
+			<h3>Heading</h3>
+			<p>Eros nobis et sea erat amet elit tempor accusam aliquyam amet 
+				volutpat lorem dolores exerci tempor et lorem iusto duis
+			</p>
+		</div>
+		<div class="block">
+			<h3>Heading</h3>
+			<p>Eros nobis et sea erat amet elit tempor accusam aliquyam amet 
+				volutpat lorem dolores exerci tempor et lorem iusto duis
+			</p>
+		</div>
+		<div class="block">
+			<h3>Heading</h3>
+			<p>Eros nobis et sea erat amet elit tempor accusam aliquyam amet 
+				volutpat lorem dolores exerci tempor et lorem iusto duis
+			</p>
+		</div>
+
+		<div class="clr"></div>
+
+		<div id="main-block">
+			<h3>Heading</h3>
+			<p>Eros nobis et sea erat amet elit tempor accusam aliquyam amet 
+				volutpat lorem dolores exerci tempor et lorem iusto duis
+			</p>
+		</div>
+		<div id="sidebar">
+			<p>Eros nobis et sea erat amet elit tempor accusam aliquyam amet 
+				volutpat lorem dolores exerci tempor et lorem iusto duis
+			</p>
+		</div>
+
+		<div class="clr"></div>
+		
+		<div class="p-box">
+			<h1>Hello</h1>
+			<h2>Goodbye</h2>
+		</div>
+
+		<ul class="my-list">
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+			<li>List Item</li>
+		</ul>
+
+		<a class="fix-me button" href="#">Hello</a>
 		<div style="margin-top:500px"></div>
 	</body>
 </html>
