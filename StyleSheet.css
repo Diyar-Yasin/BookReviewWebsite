@@ -1,289 +1,79 @@
-﻿/* * means everything. setting all this to 0 is called a reset. 
-*{
-	margin:0;
-	padding:0;
-} */
-
-/* This would deal with all buttons. Note that in our html file, we had to
-give the submit input type a class="button" to make sure these stylings applied*/
-.button{
-	background-color:#333;
-	color:#fff;
-	padding:10px 15px;
-	border:none;
-}
-
-.button:hover{
-	background:red;
-	color:#fff;
-}
-
-/* When you float objects, in order to clear the floats and not have elements on top
-of one another, you want to clear them. This class does that, you just have to write
-<div class="clr"></div> after floating things in your html file. */
-.clr{
-	clear:both;
-}
-
-h1{
-	color:green;
-}
-
-/* CSS Selectors Format:
-
-	Selector { property: value; }
-	a { background-color: yellow; } */ 
-
-/* Colors in CSS
-	Color Names: red, yellow, etc.
-	HTML5 Color Names: Coral, DarkSalmon, CornflowerBlue
-	Hexadecimal: #00ff00;
-	RGB: rgb(0, 0, 255); */
-
+﻿/* Color Pallette
+Rosewood: 5E0B15
+Red Violet: 90323D
+Bone: D9CAB3
+Bronze: BC8034
+Cashew: 4A2C22 */
 body{
-	background-color:#f4f4f4;
-	color:#555555;
-
-	/* Web Safe Fonts
-	Some font-family fonts like the one below do not require you to import any
-	special fonts. You can do so if you have your own custom ones though */
-	font-family: Georgia, serif;
-	font-size: 12px;
-	
-	/* You can also use numbers: font-weight:400 to increase boldness instead
-	of just bold or normal*/
-	font-weight:normal;
-
-	/* You can quickly do all of the above like so:
-	font: normal 16px Arial, Helvetica, sans-serif; */
-
-	/* line-height increases space b/w the lines. em is a unit of measure, you can
-	also use px (pixels) */
-	line-height:1.6em;
-	margin:0;
+	background-color:#D9CAB3;
 }
-
-/* Applies style to all links on the page */
-/* Links have 4 states: Normal (unclicked), hover (when you hover your mouse over them),
-	 active (when clicked), and visited (when the link has been clicked before)*/
-a{
-	/* Gets rid of the underline */
-	text-decoration: none;
-
-	color:DarkSeaGreen;
-}
-
-a:hover{
-	color:red;
-}
-
-a:active{
-	color:blue;
-}
-
-a:visited{
-
+#title{
+	text-align:center;
+	padding:0 4px;
+	color:#5E0B15;
+	font-family:Montserrat, sans-serif;
 }
 
 .container{
-	/* We can set this width to 500px but when you squish the window down it does not
-	scale. Doing a percentage is how we fix this. */
-	width:80%;
-
-	/* auto sets the automatic margin to the same on all sides */
+	width: 80%;
 	margin:auto;
 }
 
-/* To target a class and style it, we use .CLASSNAME */
-.box-1{
-	/*If the next 3 letters are the same, you dont need to write them for hexadecimal */
-	background-color:#333;
-	color:#fff;
-
-	border:5px red solid; /* size color style order of parameters for borders*/
-	border-width:3px;
-	border-bottom-width:10px;
-	border-top-style:dotted;
-	border-left-style:dashed;
-	border-right-style:double;
-
-	padding:20px;
-
-	margin:20px 0;
+.bar{
+	border:2px #BC8034 solid;
+	margin-bottom:10px;
 }
 
-/* Box Model
-	If you have a piece of content (text/link/etc.) in the center, the space from
-	the content to the border is called the padding. The space around the border is
-	called the margin.
-	Margin surrounds Border surrounds Padding surrounds Content 
-
-Margin & Padding Shorthand 
-p{
-	margin-top:5px;
-	margin-bottom:5px;
-	margin-right:10px;
-	margin-left:10px;
-}
-is equivalent to
-p{
-	margin: 5px 10px 5px 10px; Top Right Bottom Left order of parameters
-}
-is equivalent to
-p{
-	margin: 5px 10px; Top+Bottom Left+Right order of parameters
-}
-If they are all equal, just do margin:5px; to add 5px margin around the whole thing
-padding: works the exact same way. A similar idea works with border*/
-
-/* To style all h6 in a specific class: */
-.box-1 h6{
-	font-family:Tahoma;
-	font-weight:800;
-	font-style:italic;
-	text-decoration:underline;
-	text-transform:uppercase;
-	letter-spacing:0.2em;
-	word-spacing:1em;
-}
-
-.box-2 {
-	border:3px dotted #ccc;
-	padding:20px;
-	margin:20px 0;
-}
-
-.categories{
-	border:1px #ccc solid;
-	padding:10px;
-
-	/* border-radius gives rounded corners */
-	border-radius:15px;
-}
-
-.categories h2{
+#desc-title{
 	text-align:center;
+	padding:0 8px;
+	color:#5E0B15;
+	font-weight:bold;
+	font-family:Montserrat, sans-serif;
 }
 
-.categories ul{
-	padding:0;
-
-	/* list-style changes the bullets themselves, you can do square or none as examples */
-	list-style:none;
+.center-p{
+	text-align:center;
+	font-family:Merriweather, serif;
 }
 
-.categories li{
-	padding-bottom:8px;
-	padding-left:20px;
-	border-bottom:dotted 1px #333;
-	list-style-image: url('Images/Check.jpg');
+.giant-img{
+
 }
 
-.my-form{
-	padding:20px;
-}
-
-.my-form label{
-	display:block;
-}
-
-/* Since a button is also considered input, we add [type="text"] so this styling
-applies to all inputs of type text only. A text area is not an input type, textarea
-is the type itself. So we can add a comma with our other class we style for to add it.*/
-.my-form input[type="text"], .my-form textarea{
-	padding:8px;
+.container2{
+	position:relative;
 	width:100%
 }
 
-/* If you want things on your HTML page to float to the side you can do the following: */
-.block{
-	float:left;
-	width:33.3%;
-	border:1px solid #ccc;
-	padding:10px;
-
-	/* This command takes in padding and border and all things that affect the size of 
-	items with class block, THEN it calculates width so that everything will fit 
-	properly. Flexbox is something that takes care of this really easily as well.*/
-	box-sizing:border-box;
+.container2 img{
+	width:100%;
+	height:auto;
 }
 
-/* When editing style of an id you use a # (not a . like class) */
-#main-block{
-	float:left;
-	width:70%;
-	box-sizing:border-box;
-}
-
-#sidebar{
-	float:right;
-	width:30%;
-	background-color:#333;
-	color:#fff;
-	padding:15px;
-	box-sizing:border-box;
-}
-
-/* Position in CSS
-Static: Default, renders elements in order of document flow
-Relative: Positioned relative to its normal position but we can add top-left-bot-etc
-          properties.
-Absolute: Allows you to position exactly where you want in units
-Fixed: A fixed position to the browser (no matter how much we scroll it stays).
-Initial: Returns to the original settings
-Inherit: Takes the properties of its parent  */
-
-.p-box{
-	width:800px;
-	height:500px;
-	border:1px solid black;
-	margin-top:10px;
-	position:relative;
-
-	background-image:url('Images/abstract.jpg');
-
-	/*backgrond-position pushes it 100 right and 200 down. no repeat makes sure
-	that the image is not repeated in areas where it was moved from 
-	(by background-position)*/
-	background-repeat:no-repeat;
-	background-position:100px 200px;
-	/* you can use pixels, center, and percentages to move background images around */
-	background-position:center center;
-}
-
-.p-box h1{
-/* If it has no parent, it will position 40px relative to the entire page! Watch out
-for that. So make sure to add postion:relatrive to .p-box*/
+.container2 .btn{
 	position:absolute;
-	top:40px;
+	top:50%;
+	left:50%;
+	 transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	background-color: rgba(188, 128, 52, 0.7);
+	color: rgba(255, 255, 255, 1);
+	font-size: 16px;
+	padding: 24px 60px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+    background-repeat:no-repeat;
+    overflow: hidden;
+    outline:none;
+	font-family:Montserrat, sans-serif;
+	font-style:bold;
+	width: 25%;
+	height: 14%;
 }
 
-.p-box h2{
-	position:absolute;
-	bottom:40px;
-	right:100px;
-}
-
-.fix-me{
-	position:fixed;
-	top:400px;
-}
-
-/* having the :first-child added to li is what makes this a pseudoclass */
-.my-list li:first-child{
-	/* You can just write background and put a color/image (not necessarily needing
-	background-color) */
-	background: red;
-}
-
-.my-list li:last-child{
-	background: blue;
-}
-
-.my-list li:nth-child(5){
-	background: yellow;
-}
-
-.my-list li:nth-child(even){
-	background: gray;
+.container2 .btn:hover {
+  background-color:  rgba(217, 202, 179, 0.9);
+  color: rgba(0, 0, 0, 1);
 }
