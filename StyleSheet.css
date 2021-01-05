@@ -47,6 +47,10 @@ body{
 }
 
 .container2 img{
+	margin:0;
+	border:0;
+	outline:none;
+	padding:0;
 	width:100%;
 	height:auto;
 }
@@ -77,3 +81,59 @@ body{
   background-color:  rgba(217, 202, 179, 0.9);
   color: rgba(0, 0, 0, 1);
 }
+
+.container3{
+	margin:0;
+	border:0;
+	outline:none;
+	padding:0;
+	background-color:#90323D;
+	height:200px;
+	position:relative;
+	text-align:center;
+}
+
+.footer-title{
+	margin:0;
+	border:0;
+	outline:none;
+	padding:0;
+	position:absolute;
+	text-align:center;
+	color:#D9CAB3;
+}
+
+.footer-desc{
+	margin-top:10px;
+	border:0;
+	outline:none;
+	padding:0;
+	position:absolute;
+	text-align:center;
+	color:#D9CAB3;
+}
+
+.align{
+	text-align:center;
+}
+
+#youtube-icon{
+	transform: translate(40px, 130px);
+}
+
+#twitch-icon{
+	position:absolute;
+	transform: translate(-50px, 130px);
+}
+
+#twitter-icon{
+	position:absolute;
+	transform: translate(-100px, 130px);
+}
+
+#copyright{
+	position:absolute;
+	color:#D9CAB3;
+	transform: translate(0, 120px);
+}
+
