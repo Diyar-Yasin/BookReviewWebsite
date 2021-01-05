@@ -4,8 +4,11 @@ Red Violet: 90323D
 Bone: D9CAB3
 Bronze: BC8034
 Cashew: 4A2C22 */
+
 body{
 	background-color:#D9CAB3;
+	margin:0;
+	padding:0;
 }
 #title{
 	text-align:center;
@@ -37,20 +40,17 @@ body{
 	font-family:Merriweather, serif;
 }
 
-.giant-img{
-
-}
-
 .container2{
+margin:0;
+	border:0;
+	outline:none;
+	padding:0;
 	position:relative;
+	display:block;
 	width:100%
 }
 
 .container2 img{
-	margin:0;
-	border:0;
-	outline:none;
-	padding:0;
 	width:100%;
 	height:auto;
 }
@@ -93,12 +93,16 @@ body{
 	text-align:center;
 }
 
+.align{
+	text-align:center;
+}
+
 .footer-title{
 	margin:0;
 	border:0;
 	outline:none;
 	padding:0;
-	position:absolute;
+	padding-top:10px;
 	text-align:center;
 	color:#D9CAB3;
 }
@@ -108,32 +112,27 @@ body{
 	border:0;
 	outline:none;
 	padding:0;
-	position:absolute;
 	text-align:center;
 	color:#D9CAB3;
 }
 
-.align{
-	text-align:center;
-}
-
 #youtube-icon{
-	transform: translate(40px, 130px);
+	transform: translate(50px, 40px);
 }
 
 #twitch-icon{
 	position:absolute;
-	transform: translate(-50px, 130px);
+	transform: translate(-40px, 40px);
 }
 
 #twitter-icon{
 	position:absolute;
-	transform: translate(-100px, 130px);
+	transform: translate(-90px, 40px);
 }
 
 #copyright{
-	position:absolute;
+	text-align:center;
 	color:#D9CAB3;
-	transform: translate(0, 120px);
+	transform: translate(0, 30px);
 }
 
