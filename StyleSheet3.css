@@ -1,0 +1,38 @@
+﻿/* Color Pallette
+Rosewood: 5E0B15
+Red Violet: 90323D
+Bone: D9CAB3
+Bronze: BC8034
+Cashew: 4A2C22 */
+
+body
+{
+	background-color:#D9CAB3;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+#main-header{
+	text-align:center;
+	color:#5E0B15;
+	font-family:Montserrat, sans-serif;
+}
+
+#returnButton{
+	margin:0;
+	padding:0;
+	border:0;
+	width:50px;
+	height:50px;
+	transform:translate(40px, 70px);
+}
+
+#book-info{
+
+	font-weight:bold;
+	font-family:Merriweather, serif;
+	padding-top:10px;
+	padding-left:40px;
+}

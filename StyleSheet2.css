@@ -1,0 +1,94 @@
+﻿/* Color Pallette
+Rosewood: 5E0B15
+Red Violet: 90323D
+Bone: D9CAB3
+Bronze: BC8034
+Cashew: 4A2C22 */
+
+body
+{
+	background-color:#D9CAB3;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+
+#main-header{
+	
+	text-align:center;
+	color:#5E0B15;
+	font-family:Montserrat, sans-serif;
+}
+
+#returnButton{
+	margin:0;
+	padding:0;
+	border:0;
+	width:50px;
+	height:50px;
+	transform:translate(40px, 70px);
+}
+
+#container1{
+	margin:0;
+	padding:0;
+	border:0;
+	display:block;
+	margin-left:40px;
+}
+
+
+.container3{
+	margin:0;
+	border:0;
+	outline:none;
+	padding:0;
+	background-color:#90323D;
+	height:200px;
+	position:relative;
+	text-align:center;
+}
+
+.align{
+	text-align:center;
+}
+
+.footer-title{
+	margin:0;
+	border:0;
+	outline:none;
+	padding:0;
+	padding-top:10px;
+	text-align:center;
+	color:#D9CAB3;
+}
+
+.footer-desc{
+	margin-top:10px;
+	border:0;
+	outline:none;
+	padding:0;
+	text-align:center;
+	color:#D9CAB3;
+}
+
+#youtube-icon{
+	transform: translate(50px, 40px);
+}
+
+#twitch-icon{
+	position:absolute;
+	transform: translate(-40px, 40px);
+}
+
+#twitter-icon{
+	position:absolute;
+	transform: translate(-90px, 40px);
+}
+
+#copyright{
+	text-align:center;
+	color:#D9CAB3;
+	transform: translate(0, 30px);
+}
